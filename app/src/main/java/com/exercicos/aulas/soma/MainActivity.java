@@ -1,5 +1,11 @@
 package com.exercicos.aulas.soma;
-
+/*
+bibliotecas que são necessários para o funcionamento do projeto, equivalente ao Using do C#.
+Quando é necessário importar uma biblioteca a classe fica em vermelho por não ser reconhecida. Para corrigir pode :
+1 - digitar o import manualmente
+2 - clicar sobre a classe com erro e aguardar a solicitação do Android Studio para pressionar ALt+Tab
+3 - clicar com o botão direito sobra a classe e selecionar a opção importar
+*/
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -40,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    // método associado ao evento Click do botão
+    // método associado ao evento onClick do botão
     //Recebe sempre a classe View como parametrro, que contém as informações da origem da ação
     public void Calcula(View view){
         //recupera o valor do elemento
