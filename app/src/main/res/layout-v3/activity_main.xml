@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -32,9 +32,7 @@
             android:ems="10"
             android:hint="@string/hintN1"
             android:inputType="number"
-            android:padding="30dp"
-            android:autofillHints=""
-            android:importantForAutofill="no" />
+            android:padding="30dp" />
 
         <EditText
             android:id="@+id/num2"
@@ -43,16 +41,14 @@
             android:ems="10"
             android:hint="@string/hintN2"
             android:inputType="number"
-            android:padding="30dp"
-            android:importantForAutofill="no" />
+            android:padding="30dp" />
 
         <Button
             android:id="@+id/btnCalcula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30dp"
-            android:text="@string/btnCalc"
-            android:textColor="#795548" />
+            android:text="@string/btnCalc" />
 
         <TextView
             android:id="@+id/resultado"
@@ -61,4 +57,4 @@
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

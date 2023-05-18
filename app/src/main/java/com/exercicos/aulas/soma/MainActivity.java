@@ -6,12 +6,14 @@ Quando é necessário importar uma biblioteca a classe fica em vermelho por não
 2 - clicar sobre a classe com erro e aguardar a solicitação do Android Studio para pressionar ALt+Tab
 3 - clicar com o botão direito sobra a classe e selecionar a opção importar
 */
+
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 /*
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     EditText num2;
     TextView result;
     Button btnSoma;
+
 
     //Variaveis locais para manipulação de Valores
     int n1,n2,soma;
@@ -39,24 +42,22 @@ public class MainActivity extends AppCompatActivity {
         R --> Classe autogerada que mapeia a View
 
  */
-        num1 = (EditText)findViewById(R.id.num1);
-        num2 = (EditText)findViewById(R.id.num2);
-        result = (TextView)findViewById(R.id.resultado);
-        btnSoma = (Button)findViewById(R.id.btnCalcula);
+        num1 = (EditText) findViewById(R.id.num1);
+        num2= (EditText) findViewById(R.id.num2);
+        btnSoma = (Button) findViewById(R.id.btnCalcula);
+        result = (TextView) findViewById(R.id.resultado);
 
+        btnSoma.setOnClickListener(view -> {
+            n1 =Integer.parseInt(String.valueOf(num1.getText()));
+            n2 = Integer.parseInt(String.valueOf(num2.getText()));
+            soma = n1+n2;
+            result.setText(String.valueOf(soma));
+
+        });
     }
 
-    // método associado ao evento onClick do botão
-    //Recebe sempre a classe View como parametrro, que contém as informações da origem da ação
-    public void Calcula(View view){
-        //recupera o valor do elemento
-        n1 = Integer.parseInt(num1.getText().toString());
-        n2 = Integer.parseInt(num2.getText().toString());
-        soma = n1 + n2;
 
-        //modifica o valor do elemento para exibir em tela
-        result.setText(Integer.toString(soma));
-    }
+
 
 
 }

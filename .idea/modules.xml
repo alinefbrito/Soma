@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Soma.iml" filepath="$PROJECT_DIR$/Soma.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Soma.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Soma.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Soma.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Soma.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Soma.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Soma.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Soma.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Soma.app.unitTest.iml" />
     </modules>
   </component>
 </project>
