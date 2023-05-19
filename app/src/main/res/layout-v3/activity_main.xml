@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context="com.exercicos.aulas.soma.MainActivity">
 
     <LinearLayout
@@ -32,7 +33,8 @@
             android:ems="10"
             android:hint="@string/hintN1"
             android:inputType="number"
-            android:padding="30dp" />
+            android:padding="30dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/num2"
@@ -41,7 +43,8 @@
             android:ems="10"
             android:hint="@string/hintN2"
             android:inputType="number"
-            android:padding="30dp" />
+            android:padding="30dp"
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/btnCalcula"
@@ -57,4 +60,4 @@
 
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

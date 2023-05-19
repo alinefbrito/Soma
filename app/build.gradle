@@ -4,6 +4,7 @@ android {
 
         namespace "com.exercicos.aulas.soma"
         compileSdk 33
+
     buildToolsVersion '32.0.0'
     defaultConfig {
         applicationId "com.exercicos.aulas.soma"
